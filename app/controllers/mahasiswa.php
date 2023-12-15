@@ -20,5 +20,6 @@ class mahasiswa extends Controller {
  
     public function tambah(){
         var_dump($_POST);
+        
     }
 }
