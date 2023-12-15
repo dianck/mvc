@@ -1,0 +1,14 @@
+Options -Multiviews
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !^/public/
+RewriteRule ^(.*)$ index.php?url=$1 [L]
+
+
+# Allow access to img folder inside public
+RewriteCond %{REQUEST_URI} !^/public/img/
+RewriteRule ^public/img/(.*)$ public/img/$1 [L]
+
+#tambahan vscode
