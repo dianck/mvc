@@ -17,4 +17,8 @@ class mahasiswa extends Controller {
         $this->view('mahasiswa/detail', $data);
         $this->view('templates/footer');       
     }
+ 
+    public function tambah(){
+        var_dump($_POST);
+    }
 }
