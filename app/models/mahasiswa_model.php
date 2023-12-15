@@ -34,7 +34,7 @@ class mahasiswa_model{
         $this->bind('nama_panggilan', $data['nama_panggilan']);
         $this->bind('tempat_kerja', $data['tempat_kerja']);
 
-        $this->db-execute();
+        $this->db->execute();
 
         return $this->db->rowCount();
     }
