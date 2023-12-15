@@ -1,6 +1,6 @@
 <?php
 
-define('BASEURL', 'https://www.dinarmulia.com/mvc9/public');
+define('BASEURL', 'https://www.dinarmulia.com/mvc/public');
 
 //DB
 define('DB_HOST', 'localhost');

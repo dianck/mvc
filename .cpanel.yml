@@ -1,7 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/dinar397/public_html/mvc9/
+    - export DEPLOYPATH=/home/dinar397/public_html/mvc/
     - /bin/cp index.php $DEPLOYPATH
     - /bin/cp -R app $DEPLOYPATH
     - /bin/cp -R public $DEPLOYPATH
