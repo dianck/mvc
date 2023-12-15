@@ -28,8 +28,7 @@ class mahasiswa_model{
     public function tambahDataPenghuni($data){
         $query = "insert into penghuni 
                     values
-                    ('', :nama, :nama_panggilan, :tempat_kerja)
-                ";
+                    ('', :nama, :nama_panggilan, :tempat_kerja)";
         $this->db->query($query);
         $this->bind('nama', $data['nama']);
         $this->bind('nama_panggilan', $data['nama_panggilan']);

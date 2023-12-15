@@ -45,15 +45,6 @@
                 <input type="text" class="form-control" id="tempat_kerja" name="tempat_kerja">
             </div>
 
-            <div class="mb-3">
-                <label for="kost">Kost</label>
-                <select class="form-select form-select-sm" id="kost" name="kost" aria-label="Kost">
-                    <option selected>Lokasi Kost</option>
-                    <option value="1">Kasuari</option>
-                    <option value="2">Kedasih</option>
-                    <option value="3">Graha</option>
-                </select>
-            </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         <button type="submit" class="btn btn-primary">Tambah Data</button>
