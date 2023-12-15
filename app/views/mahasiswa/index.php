@@ -31,12 +31,19 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <form action="" method="">
+        <form action="<?= BASEURL; ?>/mahasiswa/tambah" method="post">
             <div class="mb-3">
                 <label for="nama" class="form-label">Nama</label>
                 <input type="text" class="form-control" id="nama" name="nama">
             </div>
-
+            <div class="mb-3">
+                <label for="nama_panggilan" class="form-label">Nama Panggilan</label>
+                <input type="text" class="form-control" id="nama_panggilan" name="nama_panggilan">
+            </div>
+            <div class="mb-3">
+                <label for="tempat_kerja" class="form-label">Tempat Kerja</label>
+                <input type="text" class="form-control" id="tempat_kerja" name="tempat_kerja">
+            </div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
