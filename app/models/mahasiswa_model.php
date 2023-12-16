@@ -26,7 +26,7 @@ class mahasiswa_model{
     }    
 
     public function tambahDataPenghuni($data){
-        $query = "INSERT INTO `penghuni` VALUES ('', :nama, :nama_panggilan, :tempat_kerja)";
+        $query = "INSERT INTO `penghuni` VALUES ( :nama, :nama_panggilan, :tempat_kerja)";
         $this->db->query($query);
         $this->bind('nama', $data['nama']);
         /*
