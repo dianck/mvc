@@ -32,7 +32,7 @@ class mahasiswa extends Controller {
         
     }
 
-    public function hapus(){
+    public function hapus($id){
         
         if($this->model('mahasiswa_model')->hapusDataPenghuni($id)>0){
             flasher::setFlash(' berhasil', ' dihapus', 'success');
