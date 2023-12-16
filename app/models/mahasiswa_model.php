@@ -40,9 +40,9 @@ class mahasiswa_model{
 
     public function hapusDataPenghuni($id){
         $query = "DELETE FROM penghuni where id=".$id;
-        $this->db->query($query);
+        //$this->db->query($query);
         //$this->bind('id', $id);
-        $this->db->execute();
+        //$this->db->execute();
 
         
         //return 1;
