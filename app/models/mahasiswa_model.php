@@ -46,6 +46,6 @@ class mahasiswa_model{
 
         
         //return 1;
-        return $this->db->rowCount();
+        //return $this->db->rowCount();
     }   
 }
