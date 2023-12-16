@@ -43,7 +43,7 @@ class mahasiswa_model{
         echo "<br>SQL: ".$query;
         $this->db->query($query);
         //$this->bind('id', $id);
-        //$this->db->execute();
+        $this->db->execute();
 
         
         return $this->db->rowCount();
