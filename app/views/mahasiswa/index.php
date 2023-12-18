@@ -18,7 +18,7 @@
                   <li class="list-group-item d-flex justify-content-between align-items-center">
                       <?= $mhs['nama']?>
                       <a href="<?= BASEURL; ?>/mahasiswa/detail/<?= $mhs['id']; ?>" class="badge bg-primary float-right ml-1">Detail</a>
-                      <a href="<?= BASEURL; ?>/mahasiswa/edit/<?= $mhs['id']; ?>" class="badge bg-success float-right ml-1">Edit</a>
+                      <a href="<?= BASEURL; ?>/mahasiswa/edit/<?= $mhs['id']; ?>" class="badge bg-success float-right ml-1"  data-bs-toggle="modal" data-bs-target="#formModal">Edit</a>
                       <a href="<?= BASEURL; ?>/mahasiswa/hapus/<?= $mhs['id']; ?>" class="badge bg-danger float-right ml-1" onclick="return confirm('yakin?');">hapus</a>
                   </li>
                 
