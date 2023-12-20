@@ -18,7 +18,7 @@ $(function(){
             method: 'post',
             dataType: 'json',
             success: function(data){
-                //$('#nama').val(data.nama);
+                $('#nama').val(data.nama_panggilan);
                 $('#nama_panggilan').val(data.nama_panggilan);
                 //$('#tempat_kerja').val(data.tempat_kerja);
             }
