@@ -13,7 +13,7 @@ $(function(){
         const id = $(this).data('id');
         
         $.ajax({
-            url: 'http://www.dinarmulia.com/mvc/public/mahasiswa/getubah',
+            url: 'https://www.dinarmulia.com/mvc/public/mahasiswa/getubah',
             data: {id : id},
             method: 'post',
             dataType: 'json',
