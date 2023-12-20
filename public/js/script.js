@@ -9,7 +9,7 @@ $(function(){
         //console.log('OK123');
         $('#judulModal').html('Ubah Data Penghuni');
         $('.modal-footer button[type=submit]').html('Ubah Data');
-        $('.modal-body form').attr('action', 'https://www.dinarmulia.com/mvc/publicmahasiswa/ubah');
+        $('.modal-body form').attr('action', 'https://www.dinarmulia.com/mvc/public/mahasiswa/ubah');
 
         const id = $(this).data('id');
         
