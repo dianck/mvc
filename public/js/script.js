@@ -9,6 +9,9 @@ $(function(){
         //console.log('OK123');
         $('#judulModal').html('Ubah Data Penghuni');
         $('.modal-footer button[type=submit]').html('Ubah Data');
+
+        const id = $(this).data('id');
+        console.log(id);
     });
 
 });
