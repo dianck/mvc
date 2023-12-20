@@ -53,7 +53,7 @@ class mahasiswa_model{
         $query= "UPDATE penghuni SET nama = :nama,
                  nama_panggilan = :nama_panggilan,
                  tempat_kerja = :tempat_kerja WHERE id = :id";
-        
+        /*
         $this->db->query($query);
         $this->bind('nama', $data['nama']);
         $this->bind('nama_panggilan', $data['nama_panggilan']);
@@ -61,5 +61,6 @@ class mahasiswa_model{
         $this->bind('id', $data['id']);
 
         $this->db->execute();
+        */
     }
 }
