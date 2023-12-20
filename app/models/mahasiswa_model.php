@@ -48,4 +48,18 @@ class mahasiswa_model{
         
         return $this->db->rowCount();
     }   
+
+    public function ubahDataPenghuni(){
+        $query= "UPDATE penghuni SET nama = :nama,
+                 nama_panggilan = :nama_panggilan,
+                 tempat_kerja = :tempat_kerja WHERE id = :id";
+        
+        $this->db->query($query);
+        $this->bind('nama', $data['nama']);
+        $this->bind('nama_panggilan', $data['nama_panggilan']);
+        $this->bind('tempat_kerja', $data['tempat_kerja']);
+        $this->bind('id', $data['id']);
+
+        $this->db->execute();
+    }
 }
