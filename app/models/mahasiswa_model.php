@@ -54,9 +54,11 @@ class mahasiswa_model{
                  nama = '".$data['nama']."',
                  nama_panggilan = '".$data['nama_panggilan']."',
                  tempat_kerja = '".$data['tempat_kerja']."'
-                WHERE id = '".$data['id']."'";
-        $this->db->query($query);
-        $this->db->execute();
+                 WHERE id = '".$data['id']."'";
+        
+        vardump($query);
+        //$this->db->query($query);
+        //$this->db->execute();
         /*
         $this->bind('nama', $data['nama']);
         $this->bind('nama_panggilan', $data['nama_panggilan']);
