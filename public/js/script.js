@@ -16,7 +16,7 @@ $(function(){
             url: 'http://www.dinarmulia.com/mvc/public/mahasiswa/getubah',
             data: {id : id},
             method: 'post',
-            (local function)(data: any): void
+                        (local function)(data: any): void
             success: function(data){
                 console.log(data);
             }
