@@ -66,5 +66,6 @@ class mahasiswa_model{
         $this->bind('id', $data['id']);
 
         */
+        return $this->db->rowCount();
     }
 }
