@@ -8,7 +8,7 @@
 
     <div class="row">
         <div class="col-10">
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#formModal">
+            <button type="button" class="btn btn-primary tombolTambahData" data-bs-toggle="modal" data-bs-target="#formModal">
                     Tambah Data
             </button>
             <br><br>
