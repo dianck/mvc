@@ -56,7 +56,7 @@ class mahasiswa_model{
                  tempat_kerja = '".$data['tempat_kerja']."'
                  WHERE id = '".$data['id']."'";
         
-        vardump($query);
+        var_dump($query);
         //$this->db->query($query);
         //$this->db->execute();
         /*
