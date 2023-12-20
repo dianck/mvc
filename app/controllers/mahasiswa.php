@@ -48,7 +48,7 @@ class mahasiswa extends Controller {
 
     public function getUbah(){
 
-        echo  "OK456";
+       echo json_encode($this->model('mahasiswa_model')->getMahasiswaByid($_POST['id']));
     }
 
 }
