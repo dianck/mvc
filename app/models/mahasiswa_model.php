@@ -56,9 +56,9 @@ class mahasiswa_model{
                  tempat_kerja = '".$data['tempat_kerja']."'
                  WHERE id = '".$data['id']."'";
         
-        var_dump($query);
-        //$this->db->query($query);
-        //$this->db->execute();
+        //var_dump($query);
+        $this->db->query($query);
+        $this->db->execute();
         /*
         $this->bind('nama', $data['nama']);
         $this->bind('nama_panggilan', $data['nama_panggilan']);
