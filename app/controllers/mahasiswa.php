@@ -46,4 +46,9 @@ class mahasiswa extends Controller {
         
     }
 
+    public function getUbah(){
+
+        echo  "OK456";
+    }
+
 }

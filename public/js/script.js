@@ -11,7 +11,16 @@ $(function(){
         $('.modal-footer button[type=submit]').html('Ubah Data');
 
         const id = $(this).data('id');
-        console.log(id);
+        
+        $.ajax({
+            url: 'http://www.dinarmulia.com/mvc/public/mahasiswa/getubah',
+            data: {id : id},
+            method: 'post',
+            (local function)(data: any): void
+            success: function(data){
+                console.log(data);
+            }
+        });
     });
 
 });
