@@ -72,12 +72,12 @@ class mahasiswa_model{
     public function cariDataMahasiswa(){
         $keyword = $_POST['keyword'];
 
-        //$query = "SELECT FROM PENGHUNI WHERE nama like '%".$keyword."%' ";
-        $query = "SELECT FROM PENGHUNI WHERE nama like :keyword ";
+        $query = "SELECT FROM PENGHUNI WHERE nama like '%".$keyword."%' ";
+        //$query = "SELECT FROM PENGHUNI WHERE nama like :keyword ";
 
-        //$this->db->query($query);
+        $this->db->query($query);
         //$this->db->bind('keyword', "%$keyword%");
 
-        //return $this->db->resultSet();
+        return $this->db->resultSet();
     }
 }
