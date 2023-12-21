@@ -26,7 +26,7 @@ class mahasiswa_model{
     }    
 
     public function tambahDataPenghuni($data){
-        $query = "INSERT INTO `penghuni` (`nama`, `nama_panggilan`, `tempat_kerja`) VALUES ('" . $data['nama'] . "', '". $data['nama_panggilan'] ."', '". $data['tempat_kerja'] ."')";
+        $query = "INSERT INTO `' . $this->table . '` (`nama`, `nama_panggilan`, `tempat_kerja`) VALUES ('" . $data['nama'] . "', '". $data['nama_panggilan'] ."', '". $data['tempat_kerja'] ."')";
         $this->db->query($query);
         //$this->bind('nama', $data['nama']);
         //$this->bind('nama_panggilan', $data['nama_panggilan']);
@@ -39,10 +39,10 @@ class mahasiswa_model{
     }
 
     public function hapusDataPenghuni($id){
-        $query = "DELETE FROM `penghuni` WHERE id=".$id;
+        $query = "DELETE FROM `' . $this->table . '` WHERE id=".$id;
         echo "<br>SQL: ".$query;
         $this->db->query($query);
-        //$this->bind('id', $id);
+        //$this->db->bind('id', $id);
         $this->db->execute();
 
         
@@ -50,7 +50,7 @@ class mahasiswa_model{
     }   
 
     public function ubahDataPenghuni($data){
-        $query= "UPDATE penghuni SET 
+        $query= "UPDATE ' . $this->table . ' SET 
                  nama = '".$data['nama']."',
                  nama_panggilan = '".$data['nama_panggilan']."',
                  tempat_kerja = '".$data['tempat_kerja']."'
@@ -60,10 +60,10 @@ class mahasiswa_model{
         $this->db->query($query);
         $this->db->execute();
         /*
-        $this->bind('nama', $data['nama']);
-        $this->bind('nama_panggilan', $data['nama_panggilan']);
-        $this->bind('tempat_kerja', $data['tempat_kerja']);
-        $this->bind('id', $data['id']);
+        $this->db->bind('nama', $data['nama']);
+        $this->db->bind('nama_panggilan', $data['nama_panggilan']);
+        $this->db->bind('tempat_kerja', $data['tempat_kerja']);
+        $this->db->bind('id', $data['id']);
 
         */
         return $this->db->rowCount();
@@ -72,8 +72,7 @@ class mahasiswa_model{
     public function cariDataMahasiswa(){
         $keyword = $_POST['keyword'];
 
-        //$query = "SELECT * FROM penghuni WHERE nama like '%".$keyword."%' ";
-        $query = "SELECT * FROM penghuni WHERE nama like :keyword ";
+        $query = "SELECT * FROM ' . $this->table . ' WHERE nama like :keyword ";
 
         //var_dump($query);
         $this->db->query($query);
