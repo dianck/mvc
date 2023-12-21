@@ -28,7 +28,9 @@ class mahasiswa_model{
     public function tambahDataPenghuni($data){
         //$query = "INSERT INTO " . $this->table . " (`nama`, `nama_panggilan`, `tempat_kerja`) VALUES ('" . $data['nama'] . "', '". $data['nama_panggilan'] ."', '". $data['tempat_kerja'] ."')";
         //$query = "INSERT INTO " . $this->table . " (`nama`, `nama_panggilan`, `tempat_kerja`) VALUES (':nama' , ':nama_panggilan, ':tempat_kerja')";
-        $query = "INSERT INTO " . $this->table . "  VALUES (':nama' , ':nama_panggilan, ':tempat_kerja')";
+        $query = "INSERT INTO " . $this->table . "  VALUES (:nama , :nama_panggilan, :tempat_kerja)";
+        
+        var_dump($query);
         $this->db->query($query);
         $this->db->bind('nama', $data['nama']);
         $this->db->bind('nama_panggilan', $data['nama_panggilan']);
