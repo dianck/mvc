@@ -75,9 +75,10 @@ class mahasiswa_model{
         $query = "SELECT * FROM PENGHUNI WHERE nama like '%".$keyword."%' ";
         //$query = "SELECT FROM PENGHUNI WHERE nama like :keyword ";
 
-        $this->db->query($query);
+        var_dump($query);
+        //$this->db->query($query);
         //$this->db->bind('keyword', "%$keyword%");
 
-        return $this->db->resultSet();
+        //return $this->db->resultSet();
     }
 }
