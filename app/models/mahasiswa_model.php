@@ -64,6 +64,7 @@ class mahasiswa_model{
                  WHERE id = '".$data['id']."'";
         
         //var_dump($query);
+        
         $this->db->query($query);
         $this->db->execute();
         /*
